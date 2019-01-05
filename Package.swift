@@ -43,7 +43,7 @@ let package = Package(
         .library(name: "PerfectNet", targets: ["PerfectNet"])
     ],
     dependencies: [
-        .package(url: "https://github.com/PerfectlySoft/Perfect-Crypto.git", from: "3.1.0"),
+        .package(url: "https://github.com/ryancoyne/Perfect-Crypto.git", from: "4.0.0"),
         .package(url: "https://github.com/PerfectlySoft/Perfect-Thread.git", from: "3.0.0")
     ],
     targets: [
