@@ -32,7 +32,7 @@ let package = Package(
         .package(url: "https://github.com/PerfectlySoft/Perfect-Thread.git", from: "3.0.0")
     ],
     targets: [
-        .target(name: "PerfectNet", dependencies: ["PerfectCrypto", "LinuxBridge", "PerfectThread"]),
+        .target(name: "PerfectNet", dependencies: ["PerfectCrypto", "LinuxBridge", "PerfectThread"], path: "Sources/PerfectNet"),
         .testTarget(name: "PerfectNetTests", dependencies: ["PerfectNet", "PerfectCrypto", "PerfectThread"])
     ]
 )
@@ -47,7 +47,7 @@ let package = Package(
         .package(url: "https://github.com/PerfectlySoft/Perfect-Thread.git", from: "3.0.0")
     ],
     targets: [
-        .target(name: "PerfectNet", dependencies: ["PerfectCrypto", "PerfectThread"]),
+        .target(name: "PerfectNet", dependencies: ["PerfectCrypto", "PerfectThread"], path: "Sources/PerfectNet"),
         .testTarget(name: "PerfectNetTests", dependencies: ["PerfectNet", "PerfectCrypto", "PerfectThread"])
     ]
 )
